@@ -1,16 +1,7 @@
-// type alias
-type Complex = { data: number[], output: (all: boolean) => number[] }
+// uniontypes
 
-let complex: Complex = {
-    data: [100, 200, 300],
-    output: function (all: boolean) {
-        return this.data
-    }
-}
+let myAge: string | number = 27
+console.log(myAge)
 
-let complex2: Complex = {
-    data: [100, 200, 300],
-    output: function (all: boolean) {
-        return this.data
-    }
-}
+myAge = '27'
+console.log(27)
