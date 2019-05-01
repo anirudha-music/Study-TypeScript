@@ -1,6 +1,16 @@
 "use strict";
-// uniontypes
-var myAge = 27;
-console.log(myAge);
-myAge = '27';
-console.log(27);
+// Check types
+var my_name = 'Anirudha';
+if (typeof my_name == 'string') {
+    console.log('Type is string');
+}
+else {
+    console.log('Type is number');
+}
+my_name = 9637892151;
+if (typeof my_name == 'string') {
+    console.log('Type is number');
+}
+else {
+    console.log('Type is number');
+}
