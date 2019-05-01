@@ -1,16 +1,7 @@
 "use strict";
-// Check types
-var my_name = 'Anirudha';
-if (typeof my_name == 'string') {
-    console.log('Type is string');
-}
-else {
-    console.log('Type is number');
-}
-my_name = 9637892151;
-if (typeof my_name == 'string') {
-    console.log('Type is number');
-}
-else {
-    console.log('Type is number');
-}
+// null
+// Need to enable strictNullChecks in the tsconfig.json file.
+var my_age = 20;
+console.log(my_age);
+my_age = null;
+console.log(my_age);

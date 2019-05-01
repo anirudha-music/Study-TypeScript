@@ -1,17 +1,13 @@
-// Check types
+// null
+// Need to enable strictNullChecks in the tsconfig.json file.
+let my_age: number | null = 20
+console.log(my_age)
 
-let my_name: string | number = 'Anirudha'
+my_age = null
+console.log(my_age)
 
-if (typeof my_name == 'string') {
-    console.log('Type is string')
-} else {
-    console.log('Type is number')
-}
+let canBeNull;
+canBeNull = null
 
-my_name = 9637892151
-
-if (typeof my_name == 'string') {
-    console.log('Type is number')
-} else {
-    console.log('Type is number')
-}
+let nullValue = null
+nullValue = 20
