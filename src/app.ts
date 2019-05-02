@@ -1,15 +1,13 @@
+/*
 
-namespace Formulae {
-    const PI = 3.14
+    Since we have moved the respected method to respected files.
+    we can merge the code into single file while compiling to js by typing below command
+    `tsc --outFile app.js src/rectangleMath.ts src/circleMath.ts src/app.ts`
+    Note that the file names must be in order.
+    Now check the app.js file, all the code will be bundled together.
 
-    export function calculateCircumference(daimeter: number) {
-        return daimeter * PI
-    }
+*/
 
-    export function calculateRectangel(width: number, length: number) {
-        return width * length
-    }
-}
 
 console.log(Formulae.calculateCircumference(20))
-console.log(Formulae.calculateRectangel(10, 20))
+console.log(Formulae.calculateRectangle(10, 20))
