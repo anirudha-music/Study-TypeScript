@@ -1,13 +1,13 @@
-// null
-// Need to enable strictNullChecks in the tsconfig.json file.
-let my_age: number | null = 20
-console.log(my_age)
+// Class 
 
-my_age = null
-console.log(my_age)
+class Person {
 
-let canBeNull;
-canBeNull = null
+    constructor(public name: string) { }
 
-let nullValue = null
-nullValue = 20
+    print() {
+        console.log(this.name)
+    }
+}
+
+let anirudha = new Person('Anirudha')
+anirudha.print()

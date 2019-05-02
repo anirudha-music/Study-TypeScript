@@ -1,7 +1,13 @@
 "use strict";
-// null
-// Need to enable strictNullChecks in the tsconfig.json file.
-var my_age = 20;
-console.log(my_age);
-my_age = null;
-console.log(my_age);
+// Class 
+var Person = /** @class */ (function () {
+    function Person(name) {
+        this.name = name;
+    }
+    Person.prototype.print = function () {
+        console.log(this.name);
+    };
+    return Person;
+}());
+var anirudha = new Person('Anirudha');
+anirudha.print();
