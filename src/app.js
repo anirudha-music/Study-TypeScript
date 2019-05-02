@@ -1,10 +1,13 @@
 var Formulae;
 (function (Formulae) {
-    var PI = 3.14;
-    function calculateCircumference(daimeter) {
-        return daimeter * PI;
-    }
-    Formulae.calculateCircumference = calculateCircumference;
+    var Circle;
+    (function (Circle) {
+        var PI = 3.14;
+        function calculateCircumference(daimeter) {
+            return daimeter * PI;
+        }
+        Circle.calculateCircumference = calculateCircumference;
+    })(Circle = Formulae.Circle || (Formulae.Circle = {}));
 })(Formulae || (Formulae = {}));
 var Formulae;
 (function (Formulae) {
@@ -26,10 +29,13 @@ var Formulae;
 /*
 
     Instead of doing the above things, we can import the files with the namespaces.
-    tsc src/app.ts --outFile src/app.js
     
 */
 /// <reference path="circleMath.ts" />
 /// <reference path="rectangleMath.ts" />
-console.log(Formulae.calculateCircumference(20));
+// 1st variation
+console.log(Formulae.Circle.calculateCircumference(2));
 console.log(Formulae.calculateRectangle(10, 20));
+// 2st variation
+var circeMath = Formulae.Circle;
+console.log(circeMath.calculateCircumference(3));

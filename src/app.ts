@@ -8,14 +8,14 @@
 
 */
 
-/* 
-
-    Instead of doing the above things, we can import the files with the namespaces.
-    
-*/
-
+// Instead of doing the above things, we can import the files by providing file path.
 /// <reference path="circleMath.ts" />
 /// <reference path="rectangleMath.ts" />
 
-console.log(Formulae.calculateCircumference(20))
+// 1st variation
+console.log(Formulae.Circle.calculateCircumference(2))
 console.log(Formulae.calculateRectangle(10, 20))
+
+// 2st variation
+import circeMath = Formulae.Circle
+console.log(circeMath.calculateCircumference(3))
