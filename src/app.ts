@@ -8,6 +8,14 @@
 
 */
 
+/* 
+
+    Instead of doing the above things, we can import the files with the namespaces.
+    
+*/
+
+/// <reference path="circleMath.ts" />
+/// <reference path="rectangleMath.ts" />
 
 console.log(Formulae.calculateCircumference(20))
 console.log(Formulae.calculateRectangle(10, 20))

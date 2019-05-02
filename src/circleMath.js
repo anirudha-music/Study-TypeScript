@@ -5,8 +5,4 @@ var Formulae;
         return daimeter * PI;
     }
     Formulae.calculateCircumference = calculateCircumference;
-    function calculateRectangel(width, length) {
-        return width * length;
-    }
-    Formulae.calculateRectangel = calculateRectangel;
 })(Formulae || (Formulae = {}));

@@ -1,9 +1,8 @@
-"use strict";
 var Formulae;
 (function (Formulae) {
     var PI = 3.14;
-    function calculateRectangel(width, length) {
+    function calculateRectangle(width, length) {
         return width * length;
     }
-    Formulae.calculateRectangel = calculateRectangel;
+    Formulae.calculateRectangle = calculateRectangle;
 })(Formulae || (Formulae = {}));
