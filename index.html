@@ -7,10 +7,17 @@
     <meta name="author" content="">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning TypeScript</title>
+    <script src="node_modules/systemjs/dist/system.js"></script>
 </head>
 
 <body>
-    <script src="src/app.js"></script>
+    <script>
+        SystemJS.config({
+            baseURL: './'
+        })
+        SystemJS.import('app.js')
+    </script>
 </body>
 
 </html>
