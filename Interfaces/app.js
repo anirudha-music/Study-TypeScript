@@ -8,8 +8,13 @@ function changeName(person) {
 var person = {
     firstName: 'Max',
     age: 27,
+    hobbies: ['cooking', 'sports'],
+    greet: function (lastName) {
+        console.log(lastName);
+    }
 };
 greet(person);
 changeName(person);
 greet(person);
-greet({ firstName: 'Anirudha', age: 20, hobbies: ['cooking', 'sports'] });
+person.greet('Mahale');
+// greet({firstName: 'Anirudha', age: 20, hobbies: ['cooking', 'sports']})
