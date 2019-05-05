@@ -18,3 +18,14 @@ changeName(person);
 greet(person);
 person.greet('Mahale');
 // greet({firstName: 'Anirudha', age: 20, hobbies: ['cooking', 'sports']})
+var Person = /** @class */ (function () {
+    function Person() {
+        this.firstName = 'Anirudha';
+    }
+    Person.prototype.greet = function (lastName) {
+        console.log("Hi, I am " + this.firstName + " " + lastName);
+    };
+    return Person;
+}());
+var developer = new Person();
+developer.greet('Mahale');

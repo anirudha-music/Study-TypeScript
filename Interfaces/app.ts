@@ -30,3 +30,14 @@ greet(person)
 person.greet('Mahale')
 
 // greet({firstName: 'Anirudha', age: 20, hobbies: ['cooking', 'sports']})
+
+class Person implements NamedPerson {  
+    firstName = 'Anirudha'
+
+    greet(lastName: string): void {
+        console.log(`Hi, I am ${this.firstName} ${lastName}`)
+    }
+}
+
+const me = new Person()
+me.greet('Mahale')
