@@ -41,3 +41,16 @@ class Person implements NamedPerson {
 
 const me = new Person()
 me.greet('Mahale')
+
+
+// Fuction Types
+interface DoubleValueFunc {
+    (number1: number, number2: number): number
+}
+
+let doubleFunction: DoubleValueFunc
+doubleFunction = function(val1: number, val2: number) {
+    return val1 + val2
+}
+
+console.log(doubleFunction(20, 40))

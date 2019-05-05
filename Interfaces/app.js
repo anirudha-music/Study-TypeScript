@@ -27,5 +27,10 @@ var Person = /** @class */ (function () {
     };
     return Person;
 }());
-var developer = new Person();
-developer.greet('Mahale');
+var me = new Person();
+me.greet('Mahale');
+var doubleFunction;
+doubleFunction = function (val1, val2) {
+    return val1 + val2;
+};
+console.log(doubleFunction(20, 40));
