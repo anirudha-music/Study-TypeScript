@@ -1,17 +1,12 @@
 console.log('Example of namespaces')
-namespace MyMaths {
-    const PI = 3.14
 
-    export function calculateCircumference(diameter: number) {
-        return diameter * PI
-    }
+console.log(MyMaths.calculateCircumference(2))
+console.log(MyMaths.calculateRectangle(4, 6))
 
-    export function calculateRectangle(width: number, length: number) {
-        return width * length
-    }
-}
+/*
 
-const wrongPI = 2.19
+    Run the below command to merge the files.
+    tsc --outFile app.js circleMath.ts rectangleMath.ts app.ts
+    The `outFile` bundles the specified files together into the repsected file.
 
-console.log(MyMaths.calculateCircumference(3))
-console.log(wrongPI)
+*/
